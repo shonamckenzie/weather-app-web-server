@@ -34,6 +34,12 @@ app.get('/about', (req,res) => {
     })
 })
 
+app.get('/help', (req,res) =>{
+    res.render('help', {
+        helptext: 'For help with this app please contact blah@blah.com'
+    })
+})
+
 app.get('/weather', (req, res) => {
     res.send({
         location: "Edinburgh",
